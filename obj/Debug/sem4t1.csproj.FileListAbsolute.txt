@@ -1,0 +1,7 @@
+C:\Users\paart\source\repos\sem4t1\bin\Debug\sem4t1.exe.config
+C:\Users\paart\source\repos\sem4t1\bin\Debug\sem4t1.exe
+C:\Users\paart\source\repos\sem4t1\bin\Debug\sem4t1.pdb
+C:\Users\paart\source\repos\sem4t1\obj\Debug\sem4t1.csproj.AssemblyReference.cache
+C:\Users\paart\source\repos\sem4t1\obj\Debug\sem4t1.csproj.CoreCompileInputs.cache
+C:\Users\paart\source\repos\sem4t1\obj\Debug\sem4t1.exe
+C:\Users\paart\source\repos\sem4t1\obj\Debug\sem4t1.pdb
