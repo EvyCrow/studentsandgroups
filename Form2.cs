@@ -8,8 +8,19 @@ namespace GroupsAndStudents
     public partial class Form2 : Form
     {
         public static Student student = new Student();
+        private NotAddedEventHandler notAddedEventHandler = new NotAddedEventHandler();
+
+        private class NotAddedEventHandler
+        {
+            public void NotAddedMessage()
+            {
+                MessageBox.Show("Student exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
         public Form2()
         {
+            //subscribe
+            Group.NotAdded += notAddedEventHandler.NotAddedMessage;
             InitializeComponent();
         }
 

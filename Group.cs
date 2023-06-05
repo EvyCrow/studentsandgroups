@@ -133,6 +133,8 @@ namespace GroupsAndStudents
             }
         }
 
+        public delegate void NotAddedDelegate();
+        public static event NotAddedDelegate NotAdded;
 
         //main key is student number. We have to check it
         public static bool Add(HashSet<Student> group, Student student)
@@ -147,7 +149,11 @@ namespace GroupsAndStudents
                     { permition = false; }
 
                     if (permition == false)
-                    { return false; }
+                    {
+                        //event
+                        NotAdded?.Invoke();
+                        return false; 
+                    }
                 }
             }
             catch
